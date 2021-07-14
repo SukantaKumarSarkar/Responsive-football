@@ -16,7 +16,7 @@
                 
                 .banner {
                     width: 100%;
-                    height: 677px;
+                    height: 800px;
                     background-color: #2D25A0;
                 }
                 
@@ -156,13 +156,16 @@
                  --------------*/
                 
                 @media only screen and (max-width:688px) {
-                    .banner {
+                    .banner-div {
+                        flex-direction: column;
+                    }
+                    .players .youtube-video {
+                        grid-template-columns: repeat(1, 1fr);
+                        justify-content: center;
                         width: 100%;
                     }
-                    .banner-div {
-                        grid-template-columns: repeat(1, 1fr);
-                    }
-                    .players .video {
-                        display: none;
+                    .top h1 {
+                        font-size: 36px;
+                        align-items: left;
                     }
                 }
