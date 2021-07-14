@@ -13,6 +13,7 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
 }
 
 .banner {
@@ -55,4 +56,52 @@ main {
     height: 438px;
     margin-right: 124px;
     margin-top: 153px;
+}
+
+
+/* ----------------
+        Players 
+--------------------*/
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    width: 50%;
+    margin: 220px 220px 0 220px;
+    margin-top: 70px;
+}
+
+.player {
+    width: 330px;
+    height: 474px;
+    margin-top: 27px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnail {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.player-info {
+    margin-left: 15px;
+}
+
+.player-name {
+    font-size: 28px;
+    margin: 16px 0px 10px 0px;
+}
+
+.player-detail {
+    color: #6C6C6C;
+    width: 300px;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.player img {
+    width: 300px;
+    height: 256px;
 }
